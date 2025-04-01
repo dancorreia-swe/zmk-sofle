@@ -48,6 +48,15 @@
         flavor = "balanced";
     };
 
+    rbg_glow: rbg_glow {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+
+        tap-ms = <100>;
+        label = "RBG_GLOW";
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -65,7 +74,7 @@
 
         DEFAULT {
             bindings = <
-&mt ESCAPE GRAVE  &kp N1               &kp N2           &kp N3           &kp N4             &kp N5    &kp UP_ARROW     &kp N6  &kp N7              &kp N8            &kp N9            &kp N0         &kp DEL
+&mt GRAVE ESCAPE  &kp N1               &kp N2           &kp N3           &kp N4             &kp N5    &kp UP_ARROW     &kp N6  &kp N7              &kp N8            &kp N9            &kp N0         &kp DEL
 &kp TAB           &kp Q                &kp W            &kp F            &kp P              &kp B     &kp DOWN_ARROW   &kp J   &kp L               &kp U             &kp Y             &kp SEMICOLON  &kp BSLH
 &kp CAPS          &hrm LEFT_CONTROL A  &hrm LEFT_ALT R  &hrm LEFT_GUI S  &hrm LEFT_SHIFT T  &kp G     &kp LEFT_ARROW   &kp M   &hrm RIGHT_SHIFT N  &hrm RIGHT_GUI E  &hrm RIGHT_ALT I  &hrm RCTRL O   &kp APOS
 &kp LSHFT         &kp Z                &kp X            &kp C            &kp D              &kp V     &kp RIGHT_ARROW  &kp K   &kp H               &kp COMMA         &kp DOT           &kp FSLH       &mo 4
@@ -104,14 +113,15 @@
 
         ADJUST {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans          &trans        &trans        &trans        &trans          &trans  &trans  &trans           &trans           &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
+&trans           &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_TOG  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
+&trans           &trans          &bt BT_PRV    &bt BT_NXT    &trans        &trans          &trans  &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &trans
+&trans           &trans          &trans        &trans        &trans        &trans          &trans  &trans  &trans           &trans           &trans           &trans           &trans
+&rgb_ug RGB_TOG  &bt BT_CLR_ALL  &bt BT_CLR    &out OUT_TOG  &out OUT_BLE  &out OUT_USB    &trans  &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans           &trans
             >;
 
             label = "Config";
+            sensor-bindings = <&rbg_glow>;
         };
 
         FUNCTION {
