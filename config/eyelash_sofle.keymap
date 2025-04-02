@@ -74,13 +74,6 @@
             tapping-term-ms = <200>;
             bindings = <&shifted>, <&kp>;
         };
-
-        mm: morph_mod {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp>, <&kp>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-        };
     };
 
     macros {
