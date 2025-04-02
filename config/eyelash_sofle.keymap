@@ -84,6 +84,24 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
+        rgb_b: rgb_b_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGB Brightness Morph";
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rbg_sat: rbg_sat {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RBG_SAT";
+            bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -118,11 +136,11 @@
 
         Base {
             bindings = <
-&kp GRAVE    &kp N1       &kp N2           &kp N3        &kp N4             &kp N5       &kp UP_ARROW     &kp N6       &kp N7              &kp N8            &kp N9            &kp N0         &kp DEL
-&key_repeat  &kp Q        &kp W            &kp F         &kp P              &kp B        &kp DOWN_ARROW   &kp J        &kp L               &kp U             &kp Y             &kp SEMICOLON  &kp BSLH
-&kp CAPS     &hrm RGUI A  &hrm LEFT_ALT R  &hrm RCTRL S  &hrm LEFT_SHIFT T  &kp G        &kp LEFT_ARROW   &kp M        &hrm RIGHT_SHIFT N  &hrm RIGHT_GUI E  &hrm RIGHT_ALT I  &hrm RCTRL O   &kp APOS
-&kp LSHFT    &kp Z        &kp X            &kp C         &kp D              &kp V        &kp RIGHT_ARROW  &kp K        &kp H               &kp COMMA         &kp DOT           &kp FSLH       &mo 3
-&kp C_MUTE   &kp LCTRL    &kp LEFT_GUI     &lt 4 ESC     &lt 1 SPACE        &lt 2 TAB    &kp ENTER        &lt 6 ENTER  &lt 5 BACKSPACE     &lt 7 DELETE      &kp RIGHT_SHIFT   &tog 4
+&gresc       &kp N1       &kp N2        &kp N3        &kp N4         &kp N5       &kp UP_ARROW     &kp N6       &kp N7           &kp N8        &kp N9           &kp N0         &kp DEL
+&key_repeat  &kp Q        &kp W         &kp F         &kp P          &kp B        &kp DOWN_ARROW   &kp J        &kp L            &kp U         &kp Y            &kp SEMICOLON  &kp BSLH
+&kp CAPS     &hrm LGUI A  &hrm LALT R   &hrm LCTRL S  &hrm LSHIFT T  &kp G        &kp LEFT_ARROW   &kp M        &hrm RSHIFT N    &hrm RCTRL E  &hrm RALT I      &hrm RGUI O    &kp APOS
+&kp LSHFT    &kp Z        &kp X         &kp C         &kp D          &kp V        &kp RIGHT_ARROW  &kp K        &kp H            &kp COMMA     &kp DOT          &kp FSLH       &mo 3
+&kp C_MUTE   &kp LCTRL    &kp LEFT_GUI  &lt 4 ESC     &lt 1 SPACE    &lt 2 TAB    &kp ENTER        &lt 6 ENTER  &lt 5 BACKSPACE  &lt 7 DELETE  &kp RIGHT_SHIFT  &tog 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -171,8 +189,8 @@
         Media {
             bindings = <
 &trans           &trans        &trans    &trans     &trans      &trans    &trans  &trans             &trans            &trans             &trans           &trans        &trans
-&trans           &trans        &trans    &trans     &trans      &trans    &trans  &rgb_ug RGB_TOG    &rgb_hue_morph    &rgb_ug RGB_OFF    &rgb_ug RGB_TOG  &trans        &trans
-&trans           &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans  &ext_power EP_TOG  &kp C_PREVIOUS    &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_NEXT    &trans
+&trans           &trans        &trans    &trans     &trans      &trans    &trans  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF   &rgb_hue_morph     &rbg_sat         &rgb_b        &trans
+&trans           &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans  &ext_power EP_TOG  &kp C_PREVIOUS    &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp C_NEXT    &trans
 &trans           &trans        &trans    &trans     &trans      &trans    &trans  &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4
 &rgb_ug RGB_TOG  &trans        &trans    &trans     &trans      &trans    &trans  &kp K_STOP         &kp K_PLAY_PAUSE  &kp K_MUTE         &trans           &trans
             >;
