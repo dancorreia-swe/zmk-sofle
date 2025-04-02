@@ -138,7 +138,6 @@
 &kp C_MUTE  &trans        &trans        &trans            &trans      &trans    &mkp LCLK        &kp ENTER   &kp BACKSPACE  &kp DELETE     &trans       &trans
             >;
 
-            display-name = "Symbol";
             sensor-bindings = <&scroll_encoder>;
             label = "Nav";
         };
