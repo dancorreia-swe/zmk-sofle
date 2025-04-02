@@ -196,11 +196,11 @@
 
         Symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &trans          &trans           &trans                &trans                 &trans             &trans  &trans  &trans      &trans     &trans    &trans    &trans
+&kp GREATER_THAN  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp EQUAL              &kp RIGHT_BRACE    &trans  &trans  &trans      &trans     &trans    &trans    &trans
+&kp LESS_THAN     &kp COLON       &kp DOLLAR       &kt PERCENT           &kp CARET              &kp PLUS           &trans  &trans  &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
+&kp BACKSLASH     &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp POUND              &kp PIPE           &trans  &trans  &trans      &trans     &trans    &trans    &trans
+&trans            &trans          &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &trans  &trans  &trans      &trans     &trans    &trans
             >;
 
             label = "Symbol";
