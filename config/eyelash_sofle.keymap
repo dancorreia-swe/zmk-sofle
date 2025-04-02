@@ -140,6 +140,7 @@
 
             display-name = "Symbol";
             sensor-bindings = <&scroll_encoder>;
+            label = "Nav";
         };
 
         Mouse {
@@ -152,6 +153,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "Mouse";
         };
 
         Button {
@@ -164,6 +166,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "Button";
         };
 
         Media {
@@ -176,9 +179,10 @@
             >;
 
             sensor-bindings = <&rbg_glow>;
+            label = "Media";
         };
 
-        Num {
+        Number {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -186,9 +190,11 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "Num";
         };
 
-        Sym {
+        Symbol {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -196,9 +202,11 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "Sym";
         };
 
-        Fun {
+        Funtion {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -206,6 +214,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "Fun";
         };
     };
 };
