@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   Base:
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -28,7 +28,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-caps$$
-  - {t: A, h: RGUI}
+  - {t: A, h: LGUI}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
@@ -36,9 +36,9 @@ layers:
   - $$mdi:arrow-left-bold$$
   - M
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: E, h: RIGHT GUI}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: O, h: RGUI}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -282,10 +282,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
+  - RGB EFF
   - {t: RGB HUI, s: RGB HUD}
-  - RGB OFF
-  - RGB TOG
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: RGB SAI, s: RGB SAD}
+  - {t: RGB BRI, s: RGB BRD}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
@@ -298,7 +298,7 @@ layers:
   - PREVIOUS
   - VOLUME DOWN
   - VOLUME UP
-  - NEXT
+  - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
