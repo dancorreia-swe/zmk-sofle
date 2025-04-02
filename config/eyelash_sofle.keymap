@@ -62,7 +62,7 @@
         #binding-cells = <0>;
         bindings = <&kp>, <&kp>;
         mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-    }
+    };
 
     combos {
         compatible = "zmk,combos";
