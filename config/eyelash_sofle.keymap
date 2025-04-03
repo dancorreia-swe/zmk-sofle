@@ -58,14 +58,7 @@
         label = "RBG_GLOW";
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        escape {
-            bindings = <&kp ESC>;
-            key-positions = <0 13>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         as_ht: autoshift_hold_tap {
