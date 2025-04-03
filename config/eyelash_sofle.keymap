@@ -132,8 +132,8 @@
 &gresc       &kp N1       &kp N2        &kp N3        &kp N4         &kp N5       &kp UP_ARROW     &kp N6       &kp N7           &kp N8        &kp N9           &kp N0         &kp DEL
 &key_repeat  &kp Q        &kp W         &kp F         &kp P          &kp B        &kp DOWN_ARROW   &kp J        &kp L            &kp U         &kp Y            &kp SEMICOLON  &kp BSLH
 &kp CAPS     &hrm LGUI A  &hrm LALT R   &hrm LCTRL S  &hrm LSHIFT T  &kp G        &kp LEFT_ARROW   &kp M        &hrm RSHIFT N    &hrm RCTRL E  &hrm RALT I      &hrm RGUI O    &kp APOS
-&kp LSHFT    &kp Z        &kp X         &kp C         &kp D          &kp V        &kp RIGHT_ARROW  &kp K        &kp H            &kp COMMA     &kp DOT          &kp FSLH       &mo 0
-&kp C_MUTE   &kp LCTRL    &kp LEFT_GUI  &lt 3 ESC     &lt 1 SPACE    &lt 2 TAB    &kp ENTER        &lt 5 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE  &kp RIGHT_SHIFT  &tog 3
+&kp LSHFT    &kp Z        &kp X         &kp C         &kp D          &kp V        &kp RIGHT_ARROW  &kp K        &kp H            &kp COMMA     &kp DOT          &kp FSLH       &key_repeat
+&kp C_MUTE   &kp LCTRL    &kp LEFT_GUI  &lt 4 ESC     &lt 1 SPACE    &lt 2 TAB    &kp ENTER        &lt 6 ENTER  &lt 5 BACKSPACE  &lt 7 DELETE  &kp RIGHT_SHIFT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -142,11 +142,11 @@
 
         Navigation {
             bindings = <
-&trans      &trans        &trans        &trans            &trans      &trans    &mmv MOVE_UP     &trans      &trans         &trans         &trans       &trans      &trans
-&trans      &trans        &trans        &trans            &trans      &trans    &mmv MOVE_DOWN   &kp K_REDO  &kp K_PASTE    &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
-&trans      &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHIFT  &trans    &mmv MOVE_LEFT   &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT    &kp CAPS    &trans
-&trans      &trans        &trans        &trans            &trans      &trans    &mmv MOVE_RIGHT  &kp INSERT  &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
-&kp C_MUTE  &trans        &trans        &trans            &trans      &trans    &mkp LCLK        &kp ENTER   &kp BACKSPACE  &kp DELETE     &trans       &trans
+&trans      &trans        &trans        &trans            &trans      &trans    &mmv MOVE_UP     &trans         &trans         &trans         &trans       &trans     &trans
+&trans      &trans        &trans        &trans            &trans      &trans    &mmv MOVE_DOWN   &kp LS(LG(Z))  &kp LG(V)      &kp LG(C)      &kp LG(X)    &kp LG(Z)  &trans
+&mo 3       &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHIFT  &trans    &mmv MOVE_LEFT   &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT    &kp CAPS   &trans
+&trans      &trans        &trans        &trans            &trans      &trans    &mmv MOVE_RIGHT  &kp INSERT     &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
+&kp C_MUTE  &trans        &trans        &trans            &trans      &trans    &mkp LCLK        &kp ENTER      &kp BACKSPACE  &kp DELETE     &trans       &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -155,15 +155,27 @@
 
         Mouse {
             bindings = <
-&trans  &trans        &trans    &trans     &trans          &trans    &mmv MOVE_UP     &trans          &trans          &trans        &trans           &trans      &trans
-&trans  &trans        &trans    &trans     &trans          &trans    &mmv MOVE_DOWN   &kp K_REDO      &kp K_PASTE     &kp K_COPY    &kp K_CUT        &kp K_UNDO  &trans
-&trans  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &mmv MOVE_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans      &trans
-&trans  &trans        &trans    &trans     &trans          &trans    &mmv MOVE_RIGHT  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans      &trans
+&trans  &trans        &trans    &trans     &trans          &trans    &mmv MOVE_UP     &trans          &trans          &trans        &trans           &trans     &trans
+&trans  &trans        &trans    &trans     &trans          &trans    &mmv MOVE_DOWN   &kp LG(LS(Z))   &kp LG(V)       &kp LG(C)     &kp LG(X)        &kp LG(Z)  &trans
+&to 3   &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &mmv MOVE_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans     &trans
+&trans  &trans        &trans    &trans     &trans          &trans    &mmv MOVE_RIGHT  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans     &trans
 &trans  &trans        &trans    &trans     &trans          &trans    &mkp LCLK        &mkp RCLK       &mkp LCLK       &mkp MCLK     &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
             label = "Mouse";
+        };
+
+        Windows {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans     &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(LC(Z))  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans     &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans     &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans     &trans     &trans     &trans
+            >;
+
+            label = "W-Keys";
         };
 
         Media {
