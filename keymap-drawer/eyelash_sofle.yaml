@@ -2,17 +2,17 @@ layout: {zmk_keyboard: eyelash_sofle}
 layers:
   Base:
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - {t: '1', h: '&shifted EXCLAMATION', s: '!'}
+  - {t: '2', h: '&shifted AT_SIGN', s: '@'}
+  - {t: '3', h: '&shifted HASH', s: '#'}
+  - {t: '4', h: '&shifted DOLLAR', s: $}
+  - {t: '5', h: '&shifted PERCENT', s: '%'}
   - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - {t: '6', h: '&shifted CARET', s: ^}
+  - {t: '7', h: '&shifted AMPERSAND', s: '&'}
+  - {t: '8', h: '&shifted ASTERISK', s: '*'}
+  - {t: '9', h: '&shifted LEFT_PARENTHESIS', s: (}
+  - {t: '0', h: '&shifted RIGHT_PARENTHESIS', s: )}
   - $$mdi:backspace-reverse-outline$$
   - '&key_repeat'
   - Q
@@ -448,7 +448,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - (
   - )
-  - '&key_repeat'
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
