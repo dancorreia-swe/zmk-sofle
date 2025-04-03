@@ -420,7 +420,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - $
-  - {t: ':', h: toggle}
+  - ':'
   - {t: '=', s: +}
   - _
   - {t: '$$mdi:transfer$$', type: trans}
