@@ -439,9 +439,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
   - {t: '-', s: _}
-  - <
-  - '>'
-  - '"'
+  - {t: <, s: '&lte'}
+  - {t: '>', s: '&gte'}
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
