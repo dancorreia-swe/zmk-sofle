@@ -95,6 +95,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        gte_s: gte_s {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GTE_S";
+            bindings = <&kp GREATER_THAN>, <&gte>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        lte_s: lte_s {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LTE_S";
+            bindings = <&kp LESS_THAN>, <&lte>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -121,6 +139,20 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+        };
+
+        gte: gte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GREATER_THAN &kp EQUAL>;
+            label = "GTE";
+        };
+
+        lte: lte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp EQUAL>;
+            label = "LTE";
         };
     };
 
@@ -208,7 +240,7 @@
 &trans  &trans     &trans        &trans                &trans                 &trans            &trans  &trans     &trans                &trans                 &trans            &trans             &trans
 &trans  &kp GRAVE  &kp CARET     &kp ASTERISK          &kp AMPERSAND          &kp PIPE          &trans  &kp TILDE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &trans  &kp EXCL   &kp DOLLAR    &kt COLON             &kp EQUAL              &kp UNDERSCORE    &trans  &kp AT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE    &kp SEMICOLON      &trans
-&trans  &kp PLUS   &kp QUESTION  &kp HASH              &kp PERCENT            &kp BACKSLASH     &trans  &kp SLASH  &kp MINUS             &kp LESS_THAN          &kp GREATER_THAN  &kp DOUBLE_QUOTES  &trans
+&trans  &kp PLUS   &kp QUESTION  &kp HASH              &kp PERCENT            &kp BACKSLASH     &trans  &kp SLASH  &kp MINUS             &lte_s                 &gte_s            &kp SINGLE_QUOTE   &trans
 &trans  &trans     &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LSHIFT        &trans  &trans     &trans                &trans                 &trans            &trans
             >;
 
