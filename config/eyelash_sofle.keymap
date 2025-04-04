@@ -237,11 +237,11 @@
 
         Symbol {
             bindings = <
-&trans  &trans     &trans        &trans                &trans                 &trans            &trans  &trans     &trans                &trans                 &trans            &trans             &trans
-&trans  &kp GRAVE  &kp CARET     &kp ASTERISK          &kp AMPERSAND          &kp PIPE          &trans  &kp TILDE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &kp EXCL   &kp DOLLAR    &kp COLON             &kp EQUAL              &kp UNDERSCORE    &trans  &kp AT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE    &kp SEMICOLON      &trans
-&trans  &kp PLUS   &kp QUESTION  &kp HASH              &kp PERCENT            &kp BACKSLASH     &trans  &kp SLASH  &kp MINUS             &lte_s                 &gte_s            &kp SINGLE_QUOTE   &trans
-&trans  &trans     &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LSHIFT        &trans  &trans     &trans                &trans                 &trans            &trans
+&trans  &trans                 &trans            &trans                &trans                 &trans            &trans  &trans     &trans                        &trans                        &trans            &trans               &trans
+&trans  &kp GRAVE              &kp CARET         &kp ASTERISK          &kp AMPERSAND          &kp PIPE          &trans  &kp TILDE  &kp LEFT_BRACE                &kp RIGHT_BRACE               &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans
+&trans  &hrm LGUI EXCLAMATION  &hrm LALT DOLLAR  &hrm LCTRL COLON      &hrm LSHIFT EQUAL      &kp UNDERSCORE    &trans  &kp AT     &hrm RSHIFT LEFT_PARENTHESIS  &hrm RCTRL RIGHT_PARENTHESIS  &hrm RALT UNDER   &hrm RGUI SEMICOLON  &trans
+&trans  &kp PLUS               &kp QUESTION      &kp HASH              &kp PERCENT            &kp BACKSLASH     &trans  &kp SLASH  &kp MINUS                     &lte_s                        &gte_s            &kp SINGLE_QUOTE     &trans
+&trans  &trans                 &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans            &trans  &trans     &trans                        &trans                        &trans            &trans
             >;
 
             label = "Symbol";
