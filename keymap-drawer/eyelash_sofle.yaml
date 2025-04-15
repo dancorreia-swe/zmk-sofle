@@ -408,7 +408,7 @@ layers:
   - {t: '`', s: '~'}
   - {t: /, s: '?'}
   - '*'
-  - {t: '-', s: _}
+  - ^
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
@@ -437,18 +437,18 @@ layers:
   - '%'
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '''', s: '"'}
+  - '&dcolon'
   - .
   - {t: <, s: '&lte'}
   - {t: '>', s: '&gte'}
-  - '"'
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - (
-  - )
+  - {t: '-', s: _}
   - _
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
