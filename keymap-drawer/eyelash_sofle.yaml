@@ -414,8 +414,8 @@ layers:
   - '~'
   - '{'
   - '}'
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: <, s: '&lte'}
+  - {t: '>', s: '&gte'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '!', h: LGUI}
@@ -438,9 +438,9 @@ layers:
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&dcolon'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - .
-  - {t: <, s: '&lte'}
-  - {t: '>', s: '&gte'}
   - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
