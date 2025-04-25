@@ -168,11 +168,11 @@
 
         Base {
             bindings = <
-&gresc       &as_ht EXCLAMATION N1  &as_ht AT_SIGN N2  &as_ht HASH N3  &as_ht DOLLAR N4  &as_ht PERCENT N5    &kp UP_ARROW     &as_ht CARET N6  &as_ht AMPERSAND N7  &as_ht ASTERISK N8  &as_ht LEFT_PARENTHESIS N9  &as_ht RIGHT_PARENTHESIS N0  &kp DEL
-&key_repeat  &kp Q                  &kp W              &kp F           &kp P             &kp B                &kp DOWN_ARROW   &kp J            &kp L                &kp U               &kp Y                       &kp SEMICOLON                &kp BSLH
-&kp CAPS     &hrm LGUI A            &hrm LALT R        &hrm LCTRL S    &hrm LSHIFT T     &kp G                &kp LEFT_ARROW   &kp M            &hrm RSHIFT N        &hrm RCTRL E        &hrm RALT I                 &hrm RGUI O                  &kp APOS
-&kp LSHFT    &kp Z                  &kp X              &kp C           &kp D             &kp V                &kp RIGHT_ARROW  &kp K            &kp H                &kp COMMA           &kp DOT                     &kp FSLH                     &key_repeat
-&kp C_MUTE   &kp LCTRL              &kp LEFT_GUI       &lt 4 ESC       &lt 1 SPACE       &lt 2 TAB            &kp ENTER        &lt 5 ENTER      &lt 6 BACKSPACE      &lt 7 DELETE        &kp RIGHT_SHIFT             &kp RCTRL
+&gresc       &kp N1       &kp N2        &kp N3        &kp N4         &kp N5       &kp UP_ARROW     &kp N6       &kp N7           &kp N8        &kp N9           &kp N0         &kp DEL
+&key_repeat  &kp Q        &kp W         &kp F         &kp P          &kp B        &kp DOWN_ARROW   &kp J        &kp L            &kp U         &kp Y            &kp SEMICOLON  &kp BSLH
+&kp CAPS     &hrm LGUI A  &hrm LALT R   &hrm LCTRL S  &hrm LSHIFT T  &kp G        &kp LEFT_ARROW   &kp M        &hrm RSHIFT N    &hrm RCTRL E  &hrm RALT I      &hrm RGUI O    &kp APOS
+&kp LSHFT    &kp Z        &kp X         &kp C         &kp D          &kp V        &kp RIGHT_ARROW  &kp K        &kp H            &kp COMMA     &kp DOT          &kp FSLH       &key_repeat
+&kp C_MUTE   &kp LCTRL    &kp LEFT_GUI  &lt 4 ESC     &lt 1 SPACE    &lt 2 TAB    &kp ENTER        &lt 5 ENTER  &lt 6 BACKSPACE  &lt 7 DELETE  &kp RIGHT_SHIFT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -232,11 +232,11 @@
 
         Number {
             bindings = <
-&trans  &trans                          &trans                  &trans              &trans                       &trans                              &trans  &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &as_ht LEFT_BRACE LEFT_BRACKET  &as_ht AMPERSAND N7     &as_ht STAR N8      &as_ht LPAR N9               &as_ht RIGHT_BRACE RIGHT_BRACKET    &trans  &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &as_ht COLON SEMICOLON          &as_ht DOLLAR NUMBER_4  &as_ht PERCENT N5   &as_ht CARET NUMBER_6        &kp EQUAL                           &trans  &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
-&trans  &as_ht TILDE GRAVE              &as_ht EXCL NUMBER_1    &as_ht AT NUMBER_2  &as_ht HASH NUMBER_3         &kp BACKSLASH                       &trans  &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &trans                          &trans                  &as_ht GT PERIOD    &as_ht RIGHT_PARENTHESIS N0  &as_ht UNDER MINUS                  &trans  &trans  &trans     &trans     &trans    &trans
+&trans  &trans     &trans        &trans   &trans  &trans           &trans  &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp LBKT   &kp N7        &kp N8   &kp N9  &kp RBKT         &trans  &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp SEMI   &kp NUMBER_4  &kp N5   &kp N6  &kp EQUAL        &trans  &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
+&trans  &kp GRAVE  &kp N1        &kp N2   &kp N3  &kp BACKSLASH    &trans  &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &trans     &trans        &kp DOT  &kp N0  &kp MINUS        &trans  &trans  &trans     &trans     &trans    &trans
             >;
 
             label = "Number";
