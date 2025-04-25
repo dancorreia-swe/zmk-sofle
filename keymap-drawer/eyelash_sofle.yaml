@@ -2,17 +2,17 @@ layout: {zmk_keyboard: eyelash_sofle}
 layers:
   Base:
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
-  - {t: '1', h: '&shifted EXCLAMATION', s: '!'}
-  - {t: '2', h: '&shifted AT_SIGN', s: '@'}
-  - {t: '3', h: '&shifted HASH', s: '#'}
-  - {t: '4', h: '&shifted DOLLAR', s: $}
-  - {t: '5', h: '&shifted PERCENT', s: '%'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
   - $$mdi:arrow-up-bold$$
-  - {t: '6', h: '&shifted CARET', s: ^}
-  - {t: '7', h: '&shifted AMPERSAND', s: '&'}
-  - {t: '8', h: '&shifted ASTERISK', s: '*'}
-  - {t: '9', h: '&shifted LEFT_PARENTHESIS', s: (}
-  - {t: '0', h: '&shifted RIGHT_PARENTHESIS', s: )}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - $$mdi:backspace-reverse-outline$$
   - '&key_repeat'
   - Q
@@ -340,11 +340,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '[', h: '&shifted LEFT_BRACE', s: '{'}
-  - {t: '7', h: '&shifted AMPERSAND', s: '&'}
-  - {t: '8', h: '&shifted STAR', s: '*'}
-  - {t: '9', h: '&shifted LPAR', s: (}
-  - {t: ']', h: '&shifted RIGHT_BRACE', s: '}'}
+  - {t: '[', s: '{'}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -353,10 +353,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ;, h: '&shifted COLON', s: ':'}
-  - {t: '4', h: '&shifted DOLLAR'}
-  - {t: '5', h: '&shifted PERCENT', s: '%'}
-  - {t: '6', h: '&shifted CARET'}
+  - {t: ;, s: ':'}
+  - '4'
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -366,10 +366,10 @@ layers:
   - RGUI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', h: '&shifted TILDE', s: '~'}
-  - {t: '1', h: '&shifted EXCL'}
-  - {t: '2', h: '&shifted AT'}
-  - {t: '3', h: '&shifted HASH'}
+  - {t: '`', s: '~'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -381,9 +381,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ., h: '&shifted GT'}
-  - {t: '0', h: '&shifted RIGHT_PARENTHESIS', s: )}
-  - {t: '-', h: '&shifted UNDER', s: _}
+  - {t: ., s: '>'}
+  - {t: '0', s: )}
+  - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
