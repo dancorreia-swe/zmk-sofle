@@ -413,9 +413,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - '{'
-  - '}'
   - {t: <, s: '&lte'}
   - {t: '>', s: '&gte'}
+  - '}'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '!', h: LGUI}
@@ -426,9 +426,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '@'
   - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: ), h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: '"', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RGUI, s: ':'}
+  - {t: ), h: RGUI}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - +
@@ -439,9 +439,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&dcolon'
   - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - .
   - {t: '''', s: '"'}
-  - {t: ., s: '>'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -520,3 +520,6 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [60, 56]
+  k: Sft+$$mdi:keyboard-space$$
