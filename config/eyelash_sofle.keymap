@@ -58,7 +58,14 @@
         label = "RBG_GLOW";
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        leader_key {
+            bindings = <&kp LS(SPACE)>;
+            key-positions = <60 56>;
+        };
+    };
 
     behaviors {
         as_ht: autoshift_hold_tap {
