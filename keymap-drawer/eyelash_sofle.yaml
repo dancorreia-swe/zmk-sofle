@@ -409,7 +409,7 @@ layers:
   - {t: /, s: '?'}
   - '*'
   - ^
-  - {t: \, s: '|'}
+  - '&dcolon'
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - '{'
@@ -437,7 +437,7 @@ layers:
   - '%'
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&dcolon'
+  - {t: \, s: '|'}
   - {t: '[', s: '{'}
   - .
   - {t: '''', s: '"'}
