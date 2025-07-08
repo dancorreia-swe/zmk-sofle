@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: Number}
   - {t: '$$mdi:backspace$$', h: Symbol}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Function}
+  - {t: '&key_repeat', h: Function}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   Nav:
