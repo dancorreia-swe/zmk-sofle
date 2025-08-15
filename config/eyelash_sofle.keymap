@@ -158,6 +158,16 @@
             tapping-term-ms = <280>;
             hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 53 54 55 56 57 59 60 61>;
         };
+
+        skq: skq {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SKQ";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
     };
 
     macros {
@@ -215,11 +225,11 @@
 
         Base {
             bindings = <
-&gresc       &kp N1       &kp N2        &kp N3        &kp N4         &kp N5       &kp UP_ARROW     &kp N6       &kp N7           &kp N8        &kp N9           &kp N0         &kp DEL
-&key_repeat  &kp Q        &kp W         &kp F         &kp P          &kp B        &kp DOWN_ARROW   &kp J        &kp L            &kp U         &kp Y            &kp SEMICOLON  &kp BSLH
-&kp CAPS     &hml LGUI A  &hml LALT R   &hml LCTRL S  &hml LSHIFT T  &kp G        &kp LEFT_ARROW   &kp M        &hmr RSHIFT N    &hmr RCTRL E  &hmr RALT I      &hmr RGUI O    &kp APOS
-&kp LSHFT    &kp Z        &kp X         &kp C         &kp D          &kp V        &kp RIGHT_ARROW  &kp K        &kp H            &kp COMMA     &kp DOT          &kp FSLH       &key_repeat
-&kp C_MUTE   &kp LCTRL    &kp LEFT_GUI  &lt 3 ESC     &lt 1 SPACE    &lt 2 TAB    &kp ENTER        &lt 4 ENTER  &lt 5 BACKSPACE  &lt 6 DELETE  &kp RIGHT_SHIFT  &kp RCTRL
+&gresc       &kp N1       &kp N2        &kp N3        &kp N4         &kp N5       &kp UP_ARROW     &kp N6       &kp N7           &kp N8           &kp N9       &kp N0         &kp DEL
+&key_repeat  &kp Q        &kp W         &kp F         &kp P          &kp B        &kp DOWN_ARROW   &kp J        &kp L            &kp U            &kp Y        &kp SEMICOLON  &kp BSLH
+&kp CAPS     &hml LGUI A  &hml LALT R   &hml LCTRL S  &hml LSHIFT T  &kp G        &kp LEFT_ARROW   &kp M        &hmr RSHIFT N    &hmr RCTRL E     &hmr RALT I  &hmr RGUI O    &kp APOS
+&kp LSHFT    &kp Z        &kp X         &kp C         &kp D          &kp V        &kp RIGHT_ARROW  &kp K        &kp H            &kp COMMA        &kp DOT      &kp FSLH       &mo 6
+&kp C_MUTE   &kp LCTRL    &kp LEFT_GUI  &lt 3 ESC     &lt 1 SPACE    &lt 2 TAB    &kp ENTER        &lt 4 ENTER  &lt 5 BACKSPACE  &skq LEFT_SHIFT  &kp DELETE   &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
