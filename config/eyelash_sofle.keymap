@@ -313,11 +313,11 @@
 
         Gaming {
             bindings = <
-&none  &none  &none  &none  &none      &none      &none  &none    &none      &none     &none      &none  &none
-&none  &kp Q  &kp I  &kp T  &kp M      &kp J      &none  &none    &none      &kp UP    &none      &none  &none
-&none  &kp D  &kp A  &kp F  &kp X      &none      &none  &none    &kp LEFT   &kp DOWN  &kp RIGHT  &none  &none
-&none  &none  &none  &kp V  &kp S      &none      &none  &none    &none      &none     &none      &none  &none
-&none  &none  &none  &none  &kp LSHFT  &kp TAB    &none  &kp ESC  &kp SPACE  &none     &none      &none
+&none  &none  &none  &none   &none      &none      &none   &none    &none      &none     &none      &none  &none
+&none  &kp Q  &kp I  &kp T   &kp M      &kp J      &none   &none    &none      &kp UP    &none      &none  &none
+&none  &kp D  &kp A  &kp F   &kp X      &none      &none   &none    &kp LEFT   &kp DOWN  &kp RIGHT  &none  &none
+&none  &none  &none  &kp V   &kp S      &none      &none   &none    &none      &none     &none      &none  &none
+&none  &none  &none  &trans  &kp LSHFT  &kp TAB    &tog 7  &kp ESC  &kp SPACE  &none     &none      &none
             >;
 
             label = "Gaming";
