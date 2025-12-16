@@ -199,7 +199,7 @@
         arrow: arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GREATER_THAN>;
+            bindings = <&kp KP_MINUS &kp GREATER_THAN>;
             label = "ARROW";
             wait-ms = <0>;
             tap-ms = <1>;
@@ -275,11 +275,11 @@
 
         Symbol {
             bindings = <
-&trans  &trans                 &trans            &trans                &trans             &trans           &trans  &trans     &trans                        &trans            &trans                   &trans                       &trans
-&trans  &kp GRAVE              &kp QUESTION          &kp HASH              &kp CARET          &kp BACKSLASH    &trans  &kp TILDE  &kp LEFT_BRACE                &lte_s               &gte_s                  &kp RIGHT_BRACE              &trans
-&trans  &hml LGUI EXCLAMATION  &hml LALT SEMICOLON   &hml LCTRL EQUAL      &hml LSHIFT DOLLAR &kp AMPERSAND    &trans  &kp AT     &hmr RSHIFT LEFT_PARENTHESIS  &hmr RCTRL DQT       &hmr RALT SQT           &hmr RGUI RIGHT_PARENTHESIS  &trans
-&trans  &kp PLUS               &kp SLASH             &kp ASTERISK          &kp PERCENT        &pipe_s          &trans  &dcolon    &kp LEFT_BRACKET              &kp COLON            &kp PERIOD              &kp RIGHT_BRACKET            &trans
-&trans  &trans                 &trans            &kp SPACE             &kp UNDERSCORE     &minus_s         &trans  &trans     &trans                        &trans            &trans                   &trans
+&trans  &trans                 &trans               &trans            &trans              &trans           &trans  &trans     &trans                        &trans          &trans         &trans                       &trans
+&trans  &kp GRAVE              &kp QUESTION         &kp HASH          &kp CARET           &kp BACKSLASH    &trans  &kp TILDE  &kp LEFT_BRACE                &lte_s          &gte_s         &kp RIGHT_BRACE              &trans
+&trans  &hml LGUI EXCLAMATION  &hml LALT SEMICOLON  &hml LCTRL EQUAL  &hml LSHIFT DOLLAR  &kp AMPERSAND    &trans  &kp AT     &hmr RSHIFT LEFT_PARENTHESIS  &hmr RCTRL DQT  &hmr RALT SQT  &hmr RGUI RIGHT_PARENTHESIS  &trans
+&trans  &kp PLUS               &kp SLASH            &kp ASTERISK      &kp PERCENT         &pipe_s          &trans  &dcolon    &kp LEFT_BRACKET              &kp COLON       &kp PERIOD     &kp RIGHT_BRACKET            &trans
+&trans  &trans                 &trans               &kp SPACE         &kp UNDERSCORE      &minus_s         &trans  &trans     &trans                        &trans          &trans         &trans
             >;
 
             label = "Symbol";
