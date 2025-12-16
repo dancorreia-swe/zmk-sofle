@@ -36,26 +36,13 @@
         tap-ms = <100>;
     };
 
-    hrm: homerow_mod {
-        compatible = "zmk,behavior-hold-tap";
-        label = "Homerow Mod";
-        bindings = <&kp>, <&kp>;
-
-        #binding-cells = <2>;
-        hold-trigger-on-release;
-        require-prior-idle-ms = <150>;
-        tapping-term-ms = <280>;
-        quick-tap-ms = <175>;
-        flavor = "balanced";
-    };
-
-    rbg_glow: rbg_glow {
+    rgb_glow: rgb_glow {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
 
         tap-ms = <100>;
-        label = "RBG_GLOW";
+        label = "RGB_GLOW";
     };
 
     combos {
@@ -65,17 +52,15 @@
             bindings = <&kp LS(SPACE)>;
             key-positions = <60 56>;
         };
+
+        bootloader_right {
+            bindings = <&bootloader>;
+            key-positions = <12 38 51>;  // DEL + APOS + Function (right outer column)
+            timeout-ms = <100>;
+        };
     };
 
     behaviors {
-        as_ht: autoshift_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "AUTOSHIFT_HOLD_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            bindings = <&shifted>, <&kp>;
-        };
-
         rgb_hue_morph: rgb_h_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "I/D RGB w/ Shift";
@@ -94,9 +79,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        rbg_sat: rbg_sat {
+        rgb_sat: rgb_sat {
             compatible = "zmk,behavior-mod-morph";
-            label = "RBG_SAT";
+            label = "RGB_SAT";
             bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
 
             #binding-cells = <0>;
@@ -119,16 +104,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        lkr: lkr {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LKR";
-            bindings = <&mo>, <&key_repeat>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
         };
 
         hml: home_row_mod_left {
@@ -171,31 +146,6 @@
     };
 
     macros {
-        shifted: macro_shifted_kp {
-            #binding-cells = <1>;
-            label = "MACRO_SHIFTED_KP";
-            compatible = "zmk,behavior-macro-one-param";
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT &macro_param_1to1>,
-                <&macro_tap>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&macro_release>,
-                <&kp LSHFT>;
-        };
-
-        as: autoshift {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            label = "AUTOSHIFT_KP";
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
-        };
-
         gte: gte {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -265,13 +215,13 @@
         Media {
             bindings = <
 &trans           &trans        &trans    &trans     &trans      &trans    &trans  &trans             &trans            &trans             &trans           &trans          &trans
-&trans           &trans        &trans    &trans     &trans      &trans    &trans  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF   &rgb_hue_morph     &rbg_sat         &rgb_b          &trans
+&trans           &trans        &trans    &trans     &trans      &trans    &trans  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF   &rgb_hue_morph     &rgb_sat         &rgb_b          &trans
 &trans           &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans  &ext_power EP_TOG  &kp C_PREVIOUS    &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp C_NEXT      &trans
 &trans           &trans        &trans    &trans     &trans      &trans    &trans  &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3    &bt BT_SEL 4
 &rgb_ug RGB_TOG  &trans        &trans    &trans     &trans      &trans    &tog 0  &kp C_STOP         &kp C_PLAY_PAUSE  &kp K_MUTE         &bt BT_CLR       &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&rbg_glow>;
+            sensor-bindings = <&rgb_glow>;
             label = "Media";
         };
 
