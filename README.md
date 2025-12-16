@@ -20,8 +20,8 @@ Personal ZMK firmware configuration for my Eyelash Sofle split keyboard.
 The symbol layer is organized with mnemonic patterns for each hand:
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ LEFT HAND (Vim motions)              │ RIGHT HAND (Code constructs)         │
+┌────────────────────────────────────────────────────────────────────────────┐
+│ LEFT HAND (Vim motions)             │ RIGHT HAND (Code constructs)         │
 ├─────┬─────┬─────┬─────┬─────┬───────┼─────┬─────┬─────┬─────┬─────┬────────┤
 │  `  │  ?  │  #  │  ^  │  \  │       │  ~  │  {  │ <=  │ >=  │  }  │        │
 │     │ ↑   │ ↑   │ ↑   │     │       │     │     │     │     │     │ BLOCKS │
