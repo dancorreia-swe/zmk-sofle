@@ -52,6 +52,15 @@ Physical key position matches logical direction in Vim:
 | **Calls** | `( " ' )` | Function calls: `func("str", 'c')` |
 | **Access** | `[ : . ] ::` | Properties: `ns::arr[0].prop` |
 
+### Operator Mod-Morphs
+
+| Key | Tap | + Shift | Use Case |
+|-----|-----|---------|----------|
+| `<` | `<` | `<=` | Comparisons |
+| `>` | `>` | `>=` | Comparisons |
+| `\|` | `\|` | `\|>` | Elixir pipe |
+| `-` | `-` | `->` | PHP/Elixir arrow |
+
 ## Building
 
 Firmware builds automatically via GitHub Actions on push. Download artifacts from the [Actions tab](../../actions).
