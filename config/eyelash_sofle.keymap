@@ -240,9 +240,9 @@
         Symbol {
             bindings = <
 &trans  &trans                 &trans            &trans                &trans             &trans           &trans  &trans     &trans                        &trans            &trans                   &trans                       &trans
-&trans  &kp GRAVE              &kp QUESTION      &kp ASTERISK          &kp CARET          &kp BACKSLASH    &trans  &kp TILDE  &kp LEFT_BRACE                &lte_s            &gte_s                   &kp RIGHT_BRACE              &trans
-&trans  &hml LGUI EXCLAMATION  &hml LALT DOLLAR  &hml LCTRL SEMICOLON  &hml LSHIFT EQUAL  &kp AMPERSAND    &trans  &kp AT     &hmr RSHIFT LEFT_PARENTHESIS  &hmr RCTRL COLON  &hmr RALT DOUBLE_QUOTES  &hmr RGUI RIGHT_PARENTHESIS  &trans
-&trans  &kp PLUS               &kp SLASH         &kp HASH              &kp PERCENT        &kp PIPE         &trans  &dcolon    &kp LEFT_BRACKET              &kp PERIOD        &kp SINGLE_QUOTE         &kp RIGHT_BRACKET            &trans
+&trans  &kp GRAVE              &kp QUESTION          &kp HASH              &kp CARET          &kp BACKSLASH    &trans  &kp TILDE  &kp LEFT_BRACE                &lte_s               &gte_s                  &kp RIGHT_BRACE              &trans
+&trans  &hml LGUI EXCLAMATION  &hml LALT SEMICOLON   &hml LCTRL EQUAL      &hml LSHIFT DOLLAR &kp AMPERSAND    &trans  &kp AT     &hmr RSHIFT LEFT_PARENTHESIS  &hmr RCTRL DQT       &hmr RALT SQT           &hmr RGUI RIGHT_PARENTHESIS  &trans
+&trans  &kp PLUS               &kp SLASH             &kp ASTERISK          &kp PERCENT        &kp PIPE         &trans  &dcolon    &kp LEFT_BRACKET              &kp COLON            &kp PERIOD              &kp RIGHT_BRACKET            &trans
 &trans  &trans                 &trans            &kp SPACE             &kp UNDERSCORE     &kp MINUS        &trans  &trans     &trans                        &trans            &trans                   &trans
             >;
 
