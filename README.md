@@ -60,6 +60,7 @@ Physical key position matches logical direction in Vim:
 | `>` | `>` | `>=` | Comparisons |
 | `\|` | `\|` | `\|>` | Elixir pipe |
 | `-` | `-` | `->` | PHP/Elixir arrow |
+| `=` | `=` | `=>` | PHP/Elixir fat arrow |
 
 ## Building
 
