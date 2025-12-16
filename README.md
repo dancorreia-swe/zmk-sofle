@@ -1,22 +1,25 @@
-- [中文](README.md)
-- [English](README_EN.md)
+# ZMK Config - Eyelash Sofle
 
-# 更新列表
+Personal ZMK firmware configuration for my Eyelash Sofle split keyboard.
 
-- 2024/12/21
-  1. 增加zmk-studio支持（只需要刷新左手即可使用）。
-- 2024/10/24
-  1. 修改供电模式，功耗降低。
-  2. 修正RGB供电自动关闭的功能。
+![Build](https://github.com/dancorreia-swe/zmk-sofle/actions/workflows/build.yml/badge.svg)
 
-> 如果您的键盘于10月24日之前更新，请更新最新的固件。
-> 
----
-# 联系我
+## Hardware
 
-如需3D打印的模型文件或者键盘有任何异常和故障，请联系380465425@qq.com
+- **Board**: Eyelash Sofle (nRF52840)
+- **Left**: Rotary encoder
+- **Right**: Analog joystick (pointing device)
+- **Display**: Nice View
 
-# Sofle键位图
+## Keymap
 
-<img src="keymap-drawer/eyelash_sofle.svg" >
+<img src="keymap-drawer/eyelash_sofle.svg">
 
+## Building
+
+Firmware builds automatically via GitHub Actions on push. Download artifacts from the [Actions tab](../../actions).
+
+## Resources
+
+- [ZMK Documentation](https://zmk.dev/docs)
+- [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
