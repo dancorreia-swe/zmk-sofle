@@ -13,13 +13,13 @@ manifest:
   projects:
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
-      revision: refactor
+      revision: main
     - name: nice-view-gem #new entry
       remote: m165437 #new entry
       revision: main #new entry
     - name: zmk
       remote: zmkfirmware
-      revision: v0.2.1
+      revision: v0.3.0
       import: app/west.yml
   self:
     path: config
