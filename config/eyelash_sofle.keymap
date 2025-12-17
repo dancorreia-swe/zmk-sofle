@@ -246,11 +246,11 @@
 
         Navigation {
             bindings = <
-&trans      &kp LA(N1)    &kp LA(N2)    &kp LA(N3)        &kp LA(N0)  &kp LA(TAB)    &mmv MOVE_UP     &trans         &trans         &trans         &trans       &trans     &trans
-&trans      &kp LA(T)     &kp LA(W)     &kp LA(F)         &kp LA(N)   &kp LA(M)      &mmv MOVE_DOWN   &kp LS(LG(Z))  &kp LG(V)      &kp LG(C)      &kp LG(X)    &kp LG(Z)  &trans
-&trans      &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHIFT  &trans         &mmv MOVE_LEFT   &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT    &kp CAPS   &trans
-&trans      &kp LA(A)     &kp LA(C)     &kp LA(SLASH)     &kp LA(MINUS)  &kp LA(EQUAL)    &mmv MOVE_RIGHT  &kp INSERT     &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
-&kp C_MUTE  &trans        &trans        &trans            &trans      &trans         &mkp LCLK        &kp ENTER      &kp BACKSPACE  &kp DELETE     &trans       &trans
+&trans       &kp LA(N1)    &kp LA(N2)    &kp LA(N3)        &kp LA(N0)     &trans           &mmv MOVE_UP     &trans         &trans         &trans         &trans       &trans     &trans
+&kp LA(TAB)  &kp LA(T)     &kp LA(W)     &kp LA(F)         &kp LA(N)      &kp LA(M)        &mmv MOVE_DOWN   &kp LS(LG(Z))  &kp LG(V)      &kp LG(C)      &kp LG(X)    &kp LG(Z)  &trans
+&trans       &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHIFT     &trans           &mmv MOVE_LEFT   &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT    &kp CAPS   &trans
+&trans       &kp LA(A)     &kp LA(C)     &kp LA(SLASH)     &kp LA(MINUS)  &kp LA(EQUAL)    &mmv MOVE_RIGHT  &kp INSERT     &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
+&kp C_MUTE   &trans        &trans        &trans            &trans         &trans           &mkp LCLK        &kp ENTER      &kp BACKSPACE  &kp DELETE     &trans       &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -259,11 +259,11 @@
 
         Mouse {
             bindings = <
-&trans  &kp LA(N1)    &kp LA(N2)  &kp LA(N3)  &kp LA(N0)      &kp LA(TAB)    &mmv MOVE_UP     &trans          &trans          &trans        &trans           &trans     &trans
-&trans  &kp LA(H)     &kp LA(J)   &kp LA(K)   &kp LA(L)       &trans         &mmv MOVE_DOWN   &kp LG(LS(Z))   &kp LG(V)       &kp LG(C)     &kp LG(X)        &kp LG(Z)  &trans
-&trans  &kp LEFT_GUI  &kp LALT    &kp LCTRL   &kp LEFT_SHIFT  &trans         &mmv MOVE_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans     &trans
-&trans  &kp LA(LS(H)) &kp LA(LS(J)) &kp LA(LS(K)) &kp LA(LS(L))  &trans      &mmv MOVE_RIGHT  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans     &trans
-&trans  &trans        &trans      &trans      &trans          &trans         &mkp LCLK        &mkp RCLK       &mkp LCLK       &mkp MCLK     &trans           &trans
+&trans       &kp LA(N1)     &kp LA(N2)     &kp LA(N3)     &kp LA(N0)      &trans    &mmv MOVE_UP     &trans          &trans          &trans        &trans           &trans     &trans
+&kp LA(TAB)  &kp LA(H)      &kp LA(J)      &kp LA(K)      &kp LA(L)       &trans    &mmv MOVE_DOWN   &kp LG(LS(Z))   &kp LG(V)       &kp LG(C)     &kp LG(X)        &kp LG(Z)  &trans
+&trans       &kp LEFT_GUI   &kp LALT       &kp LCTRL      &kp LEFT_SHIFT  &trans    &mmv MOVE_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans     &trans
+&trans       &kp LA(LS(H))  &kp LA(LS(J))  &kp LA(LS(K))  &kp LA(LS(L))   &trans    &mmv MOVE_RIGHT  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans     &trans
+&trans       &trans         &trans         &trans         &trans          &trans    &mkp LCLK        &mkp RCLK       &mkp LCLK       &mkp MCLK     &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
