@@ -23,26 +23,27 @@ The symbol layer is organized with mnemonic patterns for each hand:
 ┌────────────────────────────────────────────────────────────────────────────┐
 │ LEFT HAND (Vim motions)             │ RIGHT HAND (Code constructs)         │
 ├─────┬─────┬─────┬─────┬─────┬───────┼─────┬─────┬─────┬─────┬─────┬────────┤
-│  `  │  ?  │  #  │  ^  │  \  │       │  ~  │  {  │ <=  │ >=  │  }  │        │
-│     │ ↑   │ ↑   │ ↑   │     │       │     │     │     │     │     │ BLOCKS │
+│  `  │  ?  │  #  │  %  │  \  │       │  ~  │  {  │ <=  │ >=  │  }  │        │
+│     │ ↑   │ ↑   │     │     │       │     │     │     │     │     │ BLOCKS │
 ├─────┼─────┼─────┼─────┼─────┼───────┼─────┼─────┼─────┼─────┼─────┼────────┤
-│  !  │  ;  │  =  │  $  │  &  │       │  @  │  (  │  "  │  '  │  )  │        │
-│ GUI │ ALT │CTRL │SHFT │     │       │     │SHFT │CTRL │ ALT │ GUI │ CALLS  │
+│  ^  │  ;  │  =  │  $  │  &  │       │  @  │  (  │  "  │  '  │  )  │        │
+│ GUI │ ALT │CTRL │SHFT │     │ ←───→ │     │SHFT │CTRL │ ALT │ GUI │ CALLS  │
 ├─────┼─────┼─────┼─────┼─────┼───────┼─────┼─────┼─────┼─────┼─────┼────────┤
-│  +  │  /  │  *  │  %  │  |  │       │ ::  │  [  │  :  │  .  │  ]  │        │
-│     │ ↓   │ ↓   │ ↓   │     │       │     │     │     │     │     │ ACCESS │
+│  +  │  /  │  *  │  !  │  |  │       │ ::  │  [  │  :  │  .  │  ]  │        │
+│     │ ↓   │ ↓   │     │     │       │     │     │     │     │     │ ACCESS │
 └─────┴─────┴─────┴─────┴─────┴───────┴─────┴─────┴─────┴─────┴─────┴────────┘
 ```
 
-### Left Hand: Vim Motions (Vertical Pairs)
+### Left Hand: Vim Motions
 
 Physical key position matches logical direction in Vim:
 
-| Column | Top (↑) | Home | Bottom (↓) | Purpose |
-|--------|---------|------|------------|---------|
-| 2 | `?` | `;` | `/` | Search backward/forward + repeat |
-| 3 | `#` | `=` | `*` | Word search backward/forward |
-| 4 | `^` | `$` | `%` | Line start / end / match pairs |
+| Type | Keys | Position | Purpose |
+|------|------|----------|---------|
+| **Vertical** | `?` ↔ `/` | ring top/bottom | Search backward/forward |
+| **Vertical** | `#` ↔ `*` | middle top/bottom | Word search backward/forward |
+| **Horizontal** | `^` ↔ `$` | pinky ↔ index (home row) | Line start ↔ end |
+| **Neutral** | `%` | index top | Match pairs (bidirectional) |
 
 ### Right Hand: Code Constructs (Row Categories)
 
