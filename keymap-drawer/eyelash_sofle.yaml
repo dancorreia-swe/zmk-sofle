@@ -457,6 +457,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [60, 56]
-  k: Sft+$$mdi:keyboard-space$$
+  k: Alt+$$mdi:keyboard-space$$
 - p: [12, 38, 51]
   k: $$mdi:progress-download$$
