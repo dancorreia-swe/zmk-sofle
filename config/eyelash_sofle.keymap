@@ -53,7 +53,7 @@
         compatible = "zmk,combos";
 
         leader_key {
-            bindings = <&kp LS(SPACE)>;
+            bindings = <&kp LA(SPACE)>;
             key-positions = <60 56>;
         };
 
