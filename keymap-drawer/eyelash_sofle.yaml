@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Number}
   - {t: '$$mdi:backspace$$', h: Symbol}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - $$mdi:backspace-reverse-outline$$
+  - Hyper+&
   - $$mdi:apple-keyboard-option$$
   Nav:
   - {t: '$$mdi:transfer$$', type: trans}
