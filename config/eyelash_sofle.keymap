@@ -233,11 +233,11 @@
 
         Base {
             bindings = <
-&gresc       &kp N1       &kp N2        &kp N3        &kp N4         &kp N5       &kp UP_ARROW     &kp N6       &kp N7           &kp N8           &kp N9       &kp N0         &kp DEL
-&key_repeat  &kp Q        &kp W         &kp F         &kp P          &kp B        &kp DOWN_ARROW   &kp J        &kp L            &kp U            &kp Y        &kp SEMICOLON  &kp BSLH
-&kp CAPS     &hml LGUI A  &hml LALT R   &hml LCTRL S  &hml LSHIFT T  &kp G        &kp LEFT_ARROW   &kp M        &hmr RSHIFT N    &hmr RCTRL E     &hmr RALT I  &hmr RGUI O    &kp APOS
-&kp LSHFT    &kp Z        &kp X         &kp C         &kp D          &kp V        &kp RIGHT_ARROW  &kp K        &kp H            &kp COMMA        &kp DOT      &kp FSLH       &mo 6
-&kp C_MUTE   &kp LCTRL    &kp LEFT_GUI  &lt 3 ESC     &lt 1 SPACE    &lt 2 TAB    &kp ENTER        &lt 4 ENTER  &lt 5 BACKSPACE  &skq LEFT_SHIFT  &kp DELETE   &kp RALT
+&gresc       &kp N1       &kp N2        &kp N3        &kp N4         &kp N5       &kp UP_ARROW     &kp N6       &kp N7           &kp N8           &kp N9                         &kp N0         &kp DEL
+&key_repeat  &kp Q        &kp W         &kp F         &kp P          &kp B        &kp DOWN_ARROW   &kp J        &kp L            &kp U            &kp Y                          &kp SEMICOLON  &kp BSLH
+&kp CAPS     &hml LGUI A  &hml LALT R   &hml LCTRL S  &hml LSHIFT T  &kp G        &kp LEFT_ARROW   &kp M        &hmr RSHIFT N    &hmr RCTRL E     &hmr RALT I                    &hmr RGUI O    &kp APOS
+&kp LSHFT    &kp Z        &kp X         &kp C         &kp D          &kp V        &kp RIGHT_ARROW  &kp K        &kp H            &kp COMMA        &kp DOT                        &kp FSLH       &mo 6
+&kp C_MUTE   &kp LCTRL    &kp LEFT_GUI  &lt 3 ESC     &lt 1 SPACE    &lt 2 TAB    &kp ENTER        &lt 4 ENTER  &lt 5 BACKSPACE  &skq LEFT_SHIFT  &kp LS(LA(LG(LC(AMPERSAND))))  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
