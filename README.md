@@ -7,9 +7,8 @@ Personal ZMK firmware configuration for my Eyelash Sofle split keyboard.
 ## Hardware
 
 - **Board**: Eyelash Sofle (nRF52840)
-- **Left**: Rotary encoder
-- **Right**: Analog joystick (pointing device)
-- **Display**: Nice View
+- **Left**: Rotary encoder + 5-way joystick (wired as keys in the middle column: arrows/Enter on Base, mouse move/click on Nav and Mouse)
+- **Display**: nice!view on both halves, using [nice-view-gem](https://github.com/M165437/nice-view-gem)
 
 ## Keymap
 
@@ -61,11 +60,19 @@ Physical key position matches logical direction in Vim:
 | `>` | `>` | `>=` | Comparisons |
 | `\|` | `\|` | `\|>` | Elixir pipe |
 | `-` | `-` | `->` | PHP/Elixir arrow |
-| `=` | `=` | `=>` | PHP/Elixir fat arrow |
 
 ## Building
 
-Firmware builds automatically via GitHub Actions on push. Download artifacts from the [Actions tab](../../actions).
+Firmware builds automatically via GitHub Actions on push. Download the `firmware` artifact from the [Actions tab](../../actions):
+
+| File | Flash to | When |
+|------|----------|------|
+| `eyelash_sofle_left.uf2` | Left half | Every keymap/config change (keymap, display and ZMK Studio live here) |
+| `eyelash_sofle_right.uf2` | Right half | Only when ZMK version or board config changes |
+| `settings_reset.uf2` | Either half | To wipe pairings/saved settings, then flash the normal firmware again |
+
+> **ZMK Studio note:** changes saved in Studio are stored on the keyboard and take priority over `config/eyelash_sofle.keymap`.
+> Use "Restore Stock Settings" in Studio (or `settings_reset`) to go back to the file's keymap.
 
 ## Resources
 
