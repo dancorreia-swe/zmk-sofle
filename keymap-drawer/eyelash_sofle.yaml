@@ -254,12 +254,12 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Base, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - STOP
   - PLAY PAUSE
   - MUTE
   - $$mdi:bluetooth-off$$
-  - BT CLR ALL
+  - {t: '$$mdi:minus-circle-outline$$', h: '&bt_clr_all'}
   Number:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
